@@ -21,7 +21,7 @@ mongoose.connect(mongourl, {
 
 app.use(cors());
 app.use(express.json());
-app.use(authroutes);
+app.use("/api",authroutes);
 
 app.listen(port, () => {
   console.log(`Server is up on port ${port}`);
