@@ -25,6 +25,10 @@ app.use("/api",authroutes);
 
 app.get("/" , (req,res)=>{
   res.send("hello");
+});
+
+app.get('/test' , (req,res)=>{
+  res.send("testing");
 })
 
 app.listen(port, () => {
