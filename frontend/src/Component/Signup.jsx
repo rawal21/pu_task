@@ -26,7 +26,7 @@ const Signup = () => {
     setError(''); // Reset error state before submitting
     try {
       const { username, gmail, password } = formData; // Updated to match the new field name
-      const response = await axios.post('http://localhost:3000/signup', { 
+      const response = await axios.post('https://pu-task-2.onrender.com/api/signup', { 
         username,
         gmail, // Updated field name
         password
