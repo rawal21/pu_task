@@ -23,6 +23,10 @@ app.use(cors());
 app.use(express.json());
 app.use("/api",authroutes);
 
+app.get("/" , (req,res)=>{
+  res.send("hello");
+})
+
 app.listen(port, () => {
   console.log(`Server is up on port ${port}`);
 });
